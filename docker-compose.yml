@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+  db:
+    container_name: "postgres_container"
+    image: "postgres"
+    # container_name: "mariadb_container"
+    # image: "mariadb"
+    restart: always
+
+    ports:
+      - "5433:5432"
+      # - "3305:3306"
+
+    environment:
+      POSTGRES_USER: "${PG_USER}"
+      POSTGRES_PASSWORD: "${PG_PSW}"
+      POSTGRES_DB: "${PG_DB}"
+      # MYSQL_ROOT_PASSOWORD: "${MY_ROOT}"
+      # MYSQL_USER: "${MY_USER}"
+      # MYSQL_PASSWORD: "${MY_PASSWORD}"
+      # MYSQL_DATABASE: "${MY_DB}"

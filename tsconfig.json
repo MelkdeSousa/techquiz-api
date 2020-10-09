@@ -1,38 +1,41 @@
 {
-  "compilerOptions": {
-    /* Basic Options */
-    "target": "ES2017",
-    "module": "commonjs",
-    "lib": ["ES6"],
-    "allowJs": true,
-    "outDir": "./dist",
-    "rootDir": "./src",
-    "removeComments": true,
-
-    /* Strict Type-Checking Options */
-    "strict": true,
-
-    /* Module Resolution Options */
-    "typeRoots": ["./node_modules/@types", "./src/@types"],
-    "esModuleInterop": true,
-    "baseUrl": ".",
-    "paths": {
-      "@models/*": ["./src/models/*"],
-      "@controllers/*": ["./src/controllers/*"],
-      "@config/*": ["./src/config/*"],
-      "@types/*": ["./src/@types/*"]
-    },
-
-    /* Experimental Options */
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
-
-    /* Advanced Options */
-    "skipLibCheck": true,
-    "resolveJsonModule": true,
-    "forceConsistentCasingInFileNames": true
-  },
-  "include": [
-    "src/**/*"
-  ]
-}
+   "compilerOptions": {
+     /* Basic Options */
+     "target": "ES2017",
+     "module": "commonjs",
+     "lib": ["ES6"],
+     "allowJs": true,
+     "outDir": "./dist",
+     "rootDir": "./src",
+     "removeComments": true,
+ 
+     /* Strict Type-Checking Options */
+     "strict": true,
+     "strictPropertyInitialization": false,
+ 
+     /* Module Resolution Options */
+     "typeRoots": ["./node_modules/@types", "./src/@types"],
+     "esModuleInterop": true,
+     "baseUrl": ".",
+     "paths": {
+       "@controllers/*": ["./src/controllers/*"],
+       "@database/*": ["./src/database/*"],
+       "@models/*": ["./src/models/*"],
+       "@config/*": ["./src/config/*"],
+       "@types/*": ["./src/@types/*"]
+     },
+ 
+     /* Experimental Options */
+     "experimentalDecorators": true,
+     "emitDecoratorMetadata": true,
+ 
+     /* Advanced Options */
+     "skipLibCheck": true,
+     "resolveJsonModule": true,
+     "forceConsistentCasingInFileNames": true,
+     "sourceMap": true
+   },
+   "include": [
+     "src/**/*"
+   ]
+ }
